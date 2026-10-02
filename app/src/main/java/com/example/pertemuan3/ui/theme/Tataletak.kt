@@ -21,6 +21,7 @@ import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 import com.example.pertemuan3.R
+import com.example.pertemuan3.R.drawable.notasibalok
 
 @Composable
 fun TataletakColumn(modifier: Modifier) {
@@ -98,7 +99,7 @@ fun TataletakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
-    val gambar = painterResource(id = R.drawable.notasibalok)
+    val gambar = painterResource(notasibalok)
     Column {
         Box(
             modifier = modifier
@@ -107,7 +108,16 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
         ) {
-
+            Column() {
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col1_Row1_Komponen1")
+                    Text(text = "Col1_Row1_Komponen2")
+                    Text(text = "Col1_Row1_Komponen3")
+                }
+            }
         }
     }
 }
