@@ -1,9 +1,11 @@
 package com.example.pertemuan3
 
+import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -74,5 +76,15 @@ fun Tugas(modifier: Modifier = Modifier) {
                     .clip(CircleShape)
             )
         }
+
+        Spacer(modifier = Modifier.height(30.dp))
+
+        // NAMA dan NIM
+        Text(
+            text = "Nama",
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Red
+        )
     }
 }
