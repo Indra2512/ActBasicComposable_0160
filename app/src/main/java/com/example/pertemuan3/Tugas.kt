@@ -86,5 +86,11 @@ fun Tugas(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
             color = Color.Red
         )
+        Text(
+            text = "M. Indra Ardian Saputra",
+            fontSize = 18.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Blue
+        )
     }
 }
