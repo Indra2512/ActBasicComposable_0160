@@ -54,6 +54,11 @@ fun Tugas(modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.Bold,
                     color = Color.Blue
                 )
+                Text(
+                    text = "Ini merupakan halaman login,",
+                    fontSize = 14.sp,
+                    color = Color.White
+                )
             }
         }
     }
