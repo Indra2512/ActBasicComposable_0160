@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -42,7 +44,7 @@ fun Baris(modifBaris : Modifier) {
 
 
 @Composable
-fun Gambar(modifGambar: Modifier){
+fun Gambar(modifGambar: Modifier, painter: Painter, contentScale: ContentScale){
     Column(modifier = modifGambar.padding(
         top = 16.dp,
         start = 12.dp,
