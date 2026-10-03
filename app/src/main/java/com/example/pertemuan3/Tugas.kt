@@ -22,5 +22,13 @@ fun Tugas(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .background(Color.White),
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ){
+        // HEADER
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(300.dp)
+        ){
+
+    }
 }
