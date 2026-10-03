@@ -1,6 +1,7 @@
 package com.example.pertemuan3
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -35,7 +36,7 @@ fun Baris(modifBaris : Modifier) {
     Row(modifier = modifBaris.padding(top = 16.dp,
         start = 16.dp)) {
         val row1 = stringResource(id = R.string.row1)
-        val halo = string
+        Text(row1)
     }
 }
 
