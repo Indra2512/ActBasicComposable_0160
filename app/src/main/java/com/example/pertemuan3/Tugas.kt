@@ -29,6 +29,13 @@ fun Tugas(modifier: Modifier = Modifier) {
                 .fillMaxWidth()
                 .height(300.dp)
         ){
-
+        // Background
+            Image(
+                painter = painterResource(id = R.drawable.BgJepang),
+                contentDescription = null,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize()
+            )
+        }
     }
 }
