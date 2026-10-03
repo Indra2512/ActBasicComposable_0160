@@ -1,5 +1,6 @@
 package com.example.pertemuan3
 
+import android.net.TetheringManager
 import android.widget.Space
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -91,6 +92,24 @@ fun Tugas(modifier: Modifier = Modifier) {
             fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
             color = Color.Blue
+        )
+        Text(
+            text = "20240140160",
+            fontSize = 22.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black
+        )
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+        // Gambar lingkaran
+        Image(
+            painter = painterResource(id = R.drawable.IndraFoto),
+            contentDescription = "Profile Picture",
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .size(220.dp)
+                .clip(CircleShape)
         )
     }
 }
