@@ -41,7 +41,7 @@ fun Tugas(modifier: Modifier = Modifier) {
         ){
         // Background
             Image(
-                painter = painterResource(id = R.drawable.BgJepang),
+                painter = painterResource(id = R.drawable.bgjepang),
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.fillMaxSize()
@@ -104,7 +104,7 @@ fun Tugas(modifier: Modifier = Modifier) {
 
         // Gambar lingkaran
         Image(
-            painter = painterResource(id = R.drawable.IndraFoto),
+            painter = painterResource(id = R.drawable.indrafoto),
             contentDescription = "Profile Picture",
             contentScale = ContentScale.Crop,
             modifier = Modifier
